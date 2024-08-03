@@ -54,11 +54,18 @@ Example of a protected resource request:
 
 curl -X GET https://yourapi.com/api/protected-resource \
   -H "Authorization: Bearer <your-jwt-token>"
-Security Considerations
+
+Configuration
+JWT Secret: The secret for JWT signing is set in the JWT_SECRET variable.
+MongoDB: The application connects to a MongoDB instance at mongodb://127.0.0.1:27017/login.
+Notes
+Ensure MongoDB is running before starting the application.
 Always use HTTPS to protect credentials and tokens during transmission.
 Keep your JWTs secure and consider using secure storage mechanisms.
+
 Additional Information
 Ensure that you handle JWT expiration and renewal appropriately.
 Monitor and log failed login attempts to enhance security.
+
 Contributing
 For bug reports or feature requests, please open an issue on this repository. If you would like to contribute, please fork the repository and submit a pull request.
