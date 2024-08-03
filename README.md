@@ -58,6 +58,7 @@ curl -X GET https://yourapi.com/api/protected-resource \
 Configuration
 JWT Secret: The secret for JWT signing is set in the JWT_SECRET variable.
 MongoDB: The application connects to a MongoDB instance at mongodb://127.0.0.1:27017/login.
+
 Notes
 Ensure MongoDB is running before starting the application.
 Always use HTTPS to protect credentials and tokens during transmission.
